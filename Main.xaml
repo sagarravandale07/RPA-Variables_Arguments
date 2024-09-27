@@ -93,7 +93,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="496,517.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="496,400" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="url" />
       <Variable x:TypeArguments="x:String" Name="job_info" />
@@ -112,13 +112,12 @@
         <InArgument x:TypeArguments="x:String">www.google.com</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="MySequence - Invoke Workflow File (MySequence.xaml)" sap:VirtualizedContainerService.HintSize="433.6,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="MySequence.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="MySequence - Invoke Workflow File (MySequence.xaml)" sap:VirtualizedContainerService.HintSize="433.6,197.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="MySequence.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="in_url_path">[url]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="insearch_txt">RPA Jobs</InArgument>
         <OutArgument x:TypeArguments="x:String" x:Key="jobinfo">[info]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="433.6,108.8" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[info]" />
   </Sequence>
 </Activity>
